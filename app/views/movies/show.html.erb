@@ -13,24 +13,44 @@
                 <td><%= @movie.title %></td>
               </tr>
               <tr>
-                <td><strong>Description:</strong></td>
-                <td><%= @movie.description %></td>
+                <td><strong>Genre:</strong></td>
+                <td><%= @movie.Genre %></td>
               </tr>
               <tr>
-                <td><strong>Movie length:</strong></td>
-                <td><%= @movie.length %></td>
+                <td><strong>Stars:</strong></td>
+                <td><%= @movie.Stars %></td>
               </tr>
               <tr>
                 <td><strong>Director:</strong></td>
                 <td><%= @movie.director %></td>
               </tr>
               <tr>
+                <td><strong>Release Date:</strong></td>
+                <td><%= @movie.Date %></td>
+              </tr>
+              <tr>
+                <td><strong>Movie length:</strong></td>
+                <td><%= @movie.length %></td>
+              </tr>
+              <tr>
                 <td><strong>Rating:</strong></td>
                 <td><%= @movie.rating %></td>
               </tr>
+              <tr>
+                <td><strong>RottenTomato:</strong></td>
+                <td><%= @movie.RottenTomato %></td>
+              </tr>
+              <tr>
+                <td><strong>IMDb:</strong></td>
+                <td><%= @movie.IMDb %></td>
+              </tr>
+              <tr>
+                <td><strong>Download Link:</strong></td>
+                <td><%= @movie.download %></td>
+              </tr>
             </tbody>
           </table>
-          <%= link_to "Write a Review", new_movie_review_path(@movie) %>
+          <%= link_to "Write a Review", new_movie_review_path(@movie), class: "pull-right"%>
         </div>
       </div>
       <div class="col-md-7 col-md-offset-1">
