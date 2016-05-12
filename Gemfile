@@ -16,13 +16,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
-  gem 'byebug'
-end
+gem 'searchkick'
 
-group :development do
-  gem 'web-console', '~> 2.0'
-end
+
 gem 'spring'
 gem 'devise'
 gem 'paperclip','~>4.2'
@@ -30,6 +26,8 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 
 
 group :development, :test do
+  gem 'web-console', '~> 2.0'
+  gem 'byebug'
   gem 'sqlite3'
 end
 
@@ -38,5 +36,4 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem 'searchkick'
-end
+
